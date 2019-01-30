@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equipv="Content-Type" content="text/html; charset=UTF-8 "/>
+<title>New Car</title>
+</head>
+<body>
+<form method="post" action="#" th:action=@{/lisaaauto} th:object=${auto}>
+<h1>Uusi auto</h1>
+<label>Merkki:</label>
+<input type="text" th:field=${auto.merkki} name="merkki"/>
+<label>Valmistusvuosi:</label>
+<input type="number" th:field=${auto.valmistusvuosi} name="valmistusvuosi"/>
+<input type="submit" value="Lähetä"/>
+
+</form>
+
+</body>
+</html>
